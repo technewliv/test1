@@ -213,9 +213,10 @@ export default function Login() {
             <div className="space-y-4">
               <button
                 type="submit"
-                className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-lg text-[#1721e3] bg-white hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white transition-all duration-200"
+                disabled={loading}
+                className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-lg text-[#1721e3] bg-white hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {isLogin ? 'Entrar' : 'Criar conta'}
+                {loading ? 'Carregando...' : (isLogin ? 'Entrar' : 'Criar conta')}
               </button>
 
               <button

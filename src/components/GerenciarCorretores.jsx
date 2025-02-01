@@ -5,7 +5,7 @@ import {
   CheckCircleIcon,
   XCircleIcon,
 } from '@heroicons/react/24/outline';
-import { auth, db } from '../firebase';
+import { db } from '../firebase';
 import { 
   collection, 
   query, 

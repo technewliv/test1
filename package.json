@@ -2,7 +2,7 @@
   "name": "sistema-gestao",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://seu-usuario.github.io/nome-do-repositorio",
+  "homepage": "https://technewliv.github.io/test1",
   "dependencies": {
     "@emoji-mart/data": "^1.2.1",
     "@emoji-mart/react": "^1.1.1",
@@ -24,7 +24,7 @@
     "test": "react-app-rewired test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build --git git"
   },
   "eslintConfig": {
     "extends": [
@@ -45,6 +45,8 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@jridgewell/source-map": "^0.3.6",
     "assert": "^2.1.0",
     "browserify-zlib": "^0.2.0",
     "buffer": "^6.0.3",

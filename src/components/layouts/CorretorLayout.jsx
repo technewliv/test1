@@ -6,16 +6,14 @@ import {
   ChartBarIcon,
   ClipboardDocumentListIcon,
   CalendarIcon,
-  ChatBubbleLeftEllipsisIcon,
   ArrowLeftOnRectangleIcon,
   UserCircleIcon,
-  ClockIcon
 } from '@heroicons/react/24/outline';
 
 export default function CorretorLayout({ children }) {
   const navigate = useNavigate();
   const location = useLocation();
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const [isSidebarOpen] = useState(true);
   const [userData, setUserData] = useState(null);
 
   useEffect(() => {

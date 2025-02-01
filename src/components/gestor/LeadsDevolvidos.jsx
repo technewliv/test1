@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { 
   ClipboardDocumentListIcon,
   ClockIcon,
@@ -25,7 +25,7 @@ export default function LeadsDevolvidos() {
     porLimite: 0
   });
 
-  const carregarLeadsDevolvidos = async () => {
+  const carregarLeadsDevolvidos = useCallback(async () => {
     setLoading(true);
     try {
       const leadsRef = collection(db, 'leads');
@@ -101,11 +101,11 @@ export default function LeadsDevolvidos() {
     } finally {
       setLoading(false);
     }
-  };
+  }, [filtro]);
 
   useEffect(() => {
     carregarLeadsDevolvidos();
-  }, [filtro]);
+  }, [carregarLeadsDevolvidos]);
 
   const formatarTempo = (data) => {
     const agora = new Date();

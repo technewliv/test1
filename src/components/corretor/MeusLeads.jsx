@@ -81,6 +81,9 @@ export default function MeusLeads() {
             case 'lead_errado':
               perdidos++;
               break;
+            default:
+              // Leads com status não mapeado são contabilizados apenas no total
+              break;
           }
         });
 

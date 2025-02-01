@@ -9,8 +9,7 @@ import {
   getDocs, 
   collection, 
   query, 
-  where,
-  connectFirestoreEmulator 
+  where
 } from 'firebase/firestore';
 
 const firebaseConfig = {

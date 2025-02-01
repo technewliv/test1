@@ -12,7 +12,7 @@ import {
 export default function GestorLayout({ children }) {
   const navigate = useNavigate();
   const location = useLocation();
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const [isSidebarOpen] = useState(true);
 
   const handleLogout = async () => {
     try {

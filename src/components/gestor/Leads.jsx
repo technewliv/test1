@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { db } from '../../firebase';
-import { collection, writeBatch, doc, query, getDocs, orderBy, where, deleteDoc, getDoc, Timestamp } from 'firebase/firestore';
+import { collection, writeBatch, doc, query, getDocs, orderBy, where, getDoc, Timestamp } from 'firebase/firestore';
 import { CloudArrowUpIcon, XCircleIcon, CheckCircleIcon, TrashIcon, UserGroupIcon } from '@heroicons/react/24/outline';
 
 const COLUNAS_PERMITIDAS = [
